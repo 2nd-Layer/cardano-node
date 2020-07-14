@@ -1,4 +1,4 @@
-module Cardano.Config.GitRevFromGit (
+module Cardano.CLI.Git.RevFromGit (
       gitRevFromGit
     ) where
 

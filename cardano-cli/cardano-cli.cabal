@@ -41,6 +41,9 @@ library
                        Cardano.CLI.Byron.UpdateProposal
                        Cardano.CLI.Byron.Vote
 
+                       Cardano.CLI.Git.Rev
+                       Cardano.CLI.Git.RevFromGit
+
                        Cardano.CLI.Shelley.Commands
                        Cardano.CLI.Shelley.Orphans
                        Cardano.CLI.Shelley.Parsers
@@ -55,6 +58,8 @@ library
                        Cardano.CLI.Shelley.Run.StakeAddress
                        Cardano.CLI.Shelley.Run.TextView
                        Cardano.CLI.Shelley.Run.Transaction
+
+                       Cardano.CLI.TopHandler
 
   other-modules:       Paths_cardano_cli
 
@@ -80,6 +85,7 @@ library
                      , cborg >= 0.2.2 && < 0.3
                      , containers
                      , directory
+                     , file-embed
                      , filepath
                      , formatting
                      , io-sim-classes
@@ -95,8 +101,10 @@ library
                      , ouroboros-consensus-cardano
                      , ouroboros-consensus-shelley
                      , ouroboros-network
+                     , process
                      , scientific
                      , shelley-spec-ledger
+                     , template-haskell
                      , text
                      , time
                      , transformers

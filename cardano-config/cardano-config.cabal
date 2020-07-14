@@ -22,10 +22,7 @@ library
     cpp-options:       -DSYSTEMD
     build-depends:     lobemo-scribe-systemd
 
-  exposed-modules:     Cardano.Config.GitRev
-                       Cardano.Config.GitRevFromGit
-                       Cardano.Config.Parsers
-                       Cardano.Config.TopHandler
+  exposed-modules:     Cardano.Config.Parsers
                        Cardano.Config.Types
 
   build-depends:       base >=4.12 && <5
@@ -46,7 +43,6 @@ library
                      , contra-tracer
                      , cryptonite
                      , directory
-                     , file-embed
                      , filepath
                      , iohk-monitoring
                      , lobemo-backend-aggregation
@@ -69,7 +65,6 @@ library
                      , shelley-spec-ledger
                      , string-conv
                      , stm
-                     , template-haskell
                      , text
                      , transformers
                      , transformers-except

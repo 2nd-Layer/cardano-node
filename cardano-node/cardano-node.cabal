@@ -34,6 +34,7 @@ library
   hs-source-dirs:      src
 
   exposed-modules:     Cardano.Common.Help
+                       Cardano.Node.Git.Rev
                        Cardano.Node.Logging
                        Cardano.Node.Orphans
                        Cardano.Node.Protocol
@@ -45,6 +46,7 @@ library
                        Cardano.Node.Parsers
                        Cardano.Node.Run
                        Cardano.Node.Shutdown
+                       Cardano.Node.TopHandler
                        Cardano.Node.Topology
                        Cardano.Node.TraceConfig
                        Cardano.Node.Types
@@ -63,6 +65,7 @@ library
 
 
   other-modules:       Paths_cardano_node
+                       Cardano.Node.Git.RevFromGit
                        Cardano.Node.Socket
                        Cardano.Tracing.MicroBenchmarking
 
@@ -84,6 +87,7 @@ library
                      , cborg >= 0.2.2 && < 0.3
                      , containers
                      , directory
+                     , file-embed
                      , filepath
                      , hostname
                      , iproute
@@ -109,6 +113,7 @@ library
                      , scientific
                      , shelley-spec-ledger
                      , strict-concurrency
+                     , template-haskell
                      , text
                      , time
                      , tracer-transformers
