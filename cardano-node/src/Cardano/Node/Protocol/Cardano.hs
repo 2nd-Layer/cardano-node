@@ -45,9 +45,9 @@ import           Cardano.Config.Types
                    (ProtocolFilepaths(..), HasKESMetricsData(..),
                     KESMetricsData(..))
 
-import           Cardano.TracingOrphanInstances.Byron ()
-import           Cardano.TracingOrphanInstances.Shelley ()
-import           Cardano.TracingOrphanInstances.HardFork ()
+import           Cardano.Tracing.OrphanInstances.Byron ()
+import           Cardano.Tracing.OrphanInstances.Shelley ()
+import           Cardano.Tracing.OrphanInstances.HardFork ()
 
 import qualified Cardano.Node.Protocol.Byron as Byron
 import qualified Cardano.Node.Protocol.Shelley as Shelley
@@ -56,7 +56,7 @@ import           Cardano.Node.Protocol.Types
 
 
 
---TODO: move ToObject tracing instances to Cardano.TracingOrphanInstances.Consensus
+--TODO: move ToObject tracing instances to Cardano.Tracing.OrphanInstances.Consensus
 --      and do them generically for the hard fork combinator
 instance HasKESMetricsData (CardanoBlock c) where
     getKESMetricsData _forgeState = NoKESMetricsData

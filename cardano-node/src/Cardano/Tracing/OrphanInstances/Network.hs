@@ -8,7 +8,7 @@
 
 {-# OPTIONS_GHC -Wno-orphans  #-}
 
-module Cardano.TracingOrphanInstances.Network
+module Cardano.Tracing.OrphanInstances.Network
   ( showTip
   , showPoint
   ) where
@@ -21,7 +21,7 @@ import           Data.Text (pack)
 import qualified Network.Socket as Socket (SockAddr)
 import           Network.Mux (WithMuxBearer (..), MuxTrace (..))
 
-import           Cardano.TracingOrphanInstances.Common
+import           Cardano.Tracing.OrphanInstances.Common
 
 import           Ouroboros.Consensus.Block (getHeader)
 import           Ouroboros.Consensus.Ledger.SupportsMempool (GenTx, HasTxs(..),

@@ -42,7 +42,7 @@ import           Ouroboros.Consensus.Byron.Ledger (ByronBlock)
 import           Cardano.Node.Types (NodeByronProtocolConfiguration (..))
 import           Cardano.Config.Types
                    (ProtocolFilepaths(..), GenesisFile (..))
-import           Cardano.TracingOrphanInstances.Byron ()
+import           Cardano.Tracing.OrphanInstances.Byron ()
 
 import           Cardano.Node.Protocol.Types
 

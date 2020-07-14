@@ -8,12 +8,12 @@
 
 {-# OPTIONS_GHC -Wno-orphans  #-}
 
-module Cardano.TracingOrphanInstances.Byron () where
+module Cardano.Tracing.OrphanInstances.Byron () where
 
 import           Cardano.Prelude
 
-import           Cardano.TracingOrphanInstances.Common
-import           Cardano.TracingOrphanInstances.Consensus ()
+import           Cardano.Tracing.OrphanInstances.Common
+import           Cardano.Tracing.OrphanInstances.Consensus ()
 
 import           Ouroboros.Network.Block
                    (blockHash, blockSlot, blockNo)

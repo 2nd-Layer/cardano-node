@@ -46,7 +46,7 @@ import qualified Cardano.Api.Typed as Api (FileError)
 import           Cardano.Node.Types (NodeShelleyProtocolConfiguration(..))
 import           Cardano.Config.Types
                    (ProtocolFilepaths(..), GenesisFile (..))
-import           Cardano.TracingOrphanInstances.Shelley ()
+import           Cardano.Tracing.OrphanInstances.Shelley ()
 
 import           Cardano.Node.Protocol.Types
 
