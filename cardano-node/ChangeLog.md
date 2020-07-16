@@ -1,5 +1,37 @@
 # Changelog for cardano-node
 
+## 1.16.0 -- July 2020
+
+### node changes
+- New config param to specify max concurrency of block downloads (#1420, #1469)
+- Single-era modes now use the hard-fork combinator for consistency (#1475)
+- The initial Praos epoch nonce is now set to the Shelley genesis hash (#1470)
+- Changes from refactoring in the API and config libraries (#1422, #1444)
+
+### consensus changes
+
+### ledger changes
+- Change the tx size definition to simply be its size in bytes (#1639)
+- Finalise the format and specification of Byron address witness (#1657, #1670)
+- Unclaimed epoch pool rewards go to the treasury not the reserves (#1642)
+- Limit the sizes of attributes in Byron addresses (#1662)
+- Simplify the calculation of the VRF seed (#1659)
+- Fix the selection of the epoch nonce (#1651)
+- Eliminate protocolMagicId from the Shelley genesis file (#1668)
+- Include in the pool ranking function whether the pool pledge is met (#1634)
+- Performance optimisation for large UTxO and other state sizes (#1658)
+- Memory use optimisations for the UTxO (#1663)
+- Audit of uses of serialisation with hashing and signing (#1613, #1659, #1666)
+- Additional tests (#1606, #1640, #1661)
+- Add ability to run with STS assertions enabled (#1610, #1629, #1672)
+- Clarify design specification on how pool pledges are enforced (#1611)
+- Fix minor design specification description mistake (#1612)
+- Clarifications and fix typos in the formal spec (#1618, #1655)
+- Fix the documentation of the sizes of key hashes (#1622)
+- Improve the README description the main design and spec documents (#1626)
+
+### network changes
+
 ## 1.15.1 -- July 2020
 
 No changes in the node. There were changes in the cardano-api and cardano-cli.
@@ -7,7 +39,6 @@ No changes in the node. There were changes in the cardano-api and cardano-cli.
 ## 1.15.0 -- July 2020
 
 ### node changes
-
 - Support for triggering a hard fork at a specific epoch (#1328)
 - Support for triggering a hard fork at a specific protocol version (#1345)
 - Changes resulting from refactoring in the Cardano API library (#1289, #1316,
